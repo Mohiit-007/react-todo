@@ -1,0 +1,174 @@
+/* Reset + Background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  transition: 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.dark-body {
+  background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+/* Main Container */
+.container {
+  background: linear-gradient(145deg, #ffffff, #f1f5f9);
+  padding: 30px;
+  width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  transition: 0.4s ease;
+}
+
+
+/* Date + Time */
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 22px;
+  color: #3b82f6;  /* Modern blue */
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+}
+
+.container.dark h2 {
+  color: #00f5ff;
+  text-shadow: 0 0 12px rgba(0, 245, 255, 0.6);
+}
+
+/* Input Field */
+input {
+  width: 65%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+/* Buttons (General) */
+button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  margin-left: 6px;
+  transition: 0.3s ease;
+}
+
+/* Add Button */
+button:first-of-type {
+  background: #667eea;
+  color: white;
+}
+
+button:first-of-type:hover {
+  background: #5563c1;
+  transform: translateY(-2px);
+}
+
+/* Clear Button */
+button:nth-of-type(2) {
+  background: #ff4d4d;
+  color: white;
+}
+
+button:nth-of-type(2):hover {
+  background: #cc0000;
+  transform: translateY(-2px);
+}
+
+/* Todo List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Todo Item */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+li:hover {
+  transform: translateY(-3px);
+  background: #f1f1f1;
+}
+
+/* Delete Button inside Todo */
+li button {
+  background: #ff4d4d;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+li button:hover {
+  background: #cc0000;
+}
+/* Theme Toggle Button */
+.theme-toggle {
+  background: transparent;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+/* DARK MODE */
+.container.dark {
+  background: #1e1e2f;
+  color: #f1f1f1;
+}
+
+.container.dark input {
+  background: #2c2c3f;
+  color: white;
+  border: 1px solid #444;
+}
+
+.container.dark li {
+  background: #2a2a3d;
+  color: white;
+}
+
+.container.dark button:first-of-type {
+  background: #4f6df5;
+}
+
+.container.dark button:nth-of-type(2) {
+  background: #ff6b6b;
+}
+
+.container.dark li button {
+  background: #ff6b6b;
+}
+
+body,
+.container,
+h2 {
+  transition: all 0.4s ease;
+}
